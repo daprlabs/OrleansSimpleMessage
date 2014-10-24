@@ -19,4 +19,6 @@ You can run it in 3 ways:
   * Run LocalSilo.exe in a cmd window and wait for it to warm up (it will tell you that you can press the any key to exit.)
   * Run SmsConsoleClient.exe in one or more cmd windows to see usage.
 
-@reubenbond
+[@reubenbond](https://twitter.com/reubenbond)
+
+[@johnazariah](https://twitter.com/johnazariah)
