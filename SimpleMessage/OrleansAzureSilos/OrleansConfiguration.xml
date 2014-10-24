@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrleansConfiguration xmlns="urn:orleans">
+  <Globals>
+    <SystemStore SystemStoreType="AzureTable" />
+    <!-- Note: "UseDevelopmentStorage=true" remains to satisfy the runtime. It will be replaced at runtime if ServiceConfigurationSetting is provided. -->
+    <Azure DeploymentId="SimpleMessage"
+      DataConnectionString="UseDevelopmentStorage=true;ServiceConfigurationSetting=TableStorageAccount"/>
+    <!--<Azure DeploymentId="SimpleMessage"
+      DataConnectionString="DefaultEndpointsProtocol=https;AccountName=SimpleMessage;AccountKey=UseDevelopmentStorage=true"/>-->
+    <StorageProviders>
+      <!--Provider Type="Orleans.Storage.MemoryStorage" Name="InMemory" />-->
+      <!-- Note: "UseDevelopmentStorage=true" remains to satisfy the runtime. It will be replaced at runtime if ServiceConfigurationSetting is provided. -->
+      <Provider Type="Orleans.Storage.AzureTableStorage" Name="MyStore" TableName="messages" DataConnectionString="UseDevelopmentStorage=true;ServiceConfigurationSetting=TableStorageAccount"/>
+    </StorageProviders>
+  </Globals>
+  <Defaults>
+    <Tracing DefaultTraceLevel="Info" TraceToConsole="true" TraceToFile="{0}-{1}.log" >
+    </Tracing>
+  </Defaults>
+</OrleansConfiguration>

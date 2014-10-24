@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SimpleMessage</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .row {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <h1>Simple Message!</h1>
+                <h1><small>smsorleans.cloudapp.net</small></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3 col-sm-12">
+                <label for="msg">Recipient</label>
+                <input type="text" class="form-control" id="id" placeholder="Eg: 0438" value="bob's bananas">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <label for="msg">Message</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="msg" placeholder="Eg: This is why we can't have dry things!" value="This is why we can't have dry things!">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="send" type="button">Send!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <a class="btn btn-default" id="get">Get Messages</a>
+                <a class="btn btn-default pull-right" id="clear">Clear Output</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <div class="well well-lg" id="output"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
