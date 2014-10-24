@@ -45,8 +45,9 @@
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>Web</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
-    <ProjectReference Include="SimpleMessage\OrleansAzureSilos\AzureSilo.csproj">
+    <ProjectReference Include="SimpleMessage\AzureSilo\AzureSilo.csproj">
       <Name>AzureSilo</Name>
       <Project>{316A54C7-4C9F-4444-9FA4-EA38BDADC105}</Project>
       <Private>True</Private>
@@ -66,8 +67,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <PublishProfile Include="Profiles\SimpleMessageProduction.azurePubxml" />
-    <PublishProfile Include="Profiles\production.azurePubxml" />
     <PublishProfile Include="Profiles\smsorleansProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->

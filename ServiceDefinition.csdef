@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="SimpleMessage" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
   <WorkerRole name="AzureSilo" vmsize="ExtraSmall">
-    <Imports>
-      <Import moduleName="Diagnostics" />
-      <Import moduleName="RemoteAccess" />
-      <Import moduleName="RemoteForwarder" />
-    </Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />
       <Setting name="TableStorageAccount" />
@@ -20,6 +15,9 @@
     <Startup>
       <Task commandLine="CounterControl.exe" executionContext="elevated" taskType="simple" />
     </Startup>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
   </WorkerRole>
   <WebRole name="Web" vmsize="Small">
     <Sites>
@@ -34,7 +32,6 @@
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
-      <Import moduleName="RemoteAccess" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />

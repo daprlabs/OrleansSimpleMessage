@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SimpleMessage", "SimpleMessage.ccproj", "{11094565-FF24-4410-A291-4E878823D318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "SimpleMessage\WebApi\Web.csproj", "{9F765330-6B29-4E59-A67C-1DB0171537F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{53D55CDA-1DBA-45EA-8977-7FACEAAA45A5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grains", "SimpleMessage\Grains\Grains.csproj", "{2B653171-663D-4826-9FD8-6E382EA606B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrainInterfaces", "SimpleMessage\Interfaces\GrainInterfaces.csproj", "{F9873A14-1C5E-489C-904F-D05AF1703F2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{98DA717B-B32B-477D-8EA1-3F710BC9DB49}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\orleans-41db8783b34dbf1120d19ee9d5696e1628eb7a53.zip = Dependencies\orleans-41db8783b34dbf1120d19ee9d5696e1628eb7a53.zip
+		Dependencies\orleans_setup.msi = Dependencies\orleans_setup.msi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsConsoleClient", "SmsConsoleClient\SmsConsoleClient.csproj", "{17FDFF36-308C-4060-90D6-BF3A18C0DFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalSilo", "SimpleMessage\LocalSilo\LocalSilo.csproj", "{82229AB5-C2B7-492C-BC3E-F9E5AE0095D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Push Messaging", "Push Messaging", "{BC9FCF4A-E5CB-4EB3-8CD8-C5F0A0420FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSilo", "SimpleMessage\AzureSilo\AzureSilo.csproj", "{316A54C7-4C9F-4444-9FA4-EA38BDADC105}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11094565-FF24-4410-A291-4E878823D318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11094565-FF24-4410-A291-4E878823D318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11094565-FF24-4410-A291-4E878823D318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11094565-FF24-4410-A291-4E878823D318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F765330-6B29-4E59-A67C-1DB0171537F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F765330-6B29-4E59-A67C-1DB0171537F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F765330-6B29-4E59-A67C-1DB0171537F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F765330-6B29-4E59-A67C-1DB0171537F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B653171-663D-4826-9FD8-6E382EA606B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B653171-663D-4826-9FD8-6E382EA606B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B653171-663D-4826-9FD8-6E382EA606B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B653171-663D-4826-9FD8-6E382EA606B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9873A14-1C5E-489C-904F-D05AF1703F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9873A14-1C5E-489C-904F-D05AF1703F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9873A14-1C5E-489C-904F-D05AF1703F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9873A14-1C5E-489C-904F-D05AF1703F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FDFF36-308C-4060-90D6-BF3A18C0DFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FDFF36-308C-4060-90D6-BF3A18C0DFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FDFF36-308C-4060-90D6-BF3A18C0DFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FDFF36-308C-4060-90D6-BF3A18C0DFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82229AB5-C2B7-492C-BC3E-F9E5AE0095D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82229AB5-C2B7-492C-BC3E-F9E5AE0095D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82229AB5-C2B7-492C-BC3E-F9E5AE0095D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82229AB5-C2B7-492C-BC3E-F9E5AE0095D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316A54C7-4C9F-4444-9FA4-EA38BDADC105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316A54C7-4C9F-4444-9FA4-EA38BDADC105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316A54C7-4C9F-4444-9FA4-EA38BDADC105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316A54C7-4C9F-4444-9FA4-EA38BDADC105}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
