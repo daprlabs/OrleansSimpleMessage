@@ -3,6 +3,9 @@ SimpleMessage
 
 Orleans-based "SMS" service application for TechEd Australia!
 
+Here it is in action running in Azure:
+![The Web site](http://i.imgur.com/NMVOCkc.png)
+
 You can run it in 3 ways:
 
 1. In Azure:
