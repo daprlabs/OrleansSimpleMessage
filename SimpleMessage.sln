@@ -28,8 +28,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsConsoleClient", "SmsCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalSilo", "SimpleMessage\LocalSilo\LocalSilo.csproj", "{82229AB5-C2B7-492C-BC3E-F9E5AE0095D2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Push Messaging", "Push Messaging", "{BC9FCF4A-E5CB-4EB3-8CD8-C5F0A0420FC0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSilo", "SimpleMessage\AzureSilo\AzureSilo.csproj", "{316A54C7-4C9F-4444-9FA4-EA38BDADC105}"
 EndProject
 Global
